@@ -82,12 +82,4 @@
   handlers:
   - name: Restart Tomcat
     #shell: "nohup sh /opt/SP/apps/tomcat/bin/catalina.sh stop"
-    shell: "nohup sh /opt/SP/apps/tomcat/bin/catalina.sh start"
-
-
-- hosts: db
-  name: My DB Group Apache Deployment
-  sudo: yes 
-  tasks: 
-  - name: Install Apache2 Packages
-    apt: name=apache2 state=present
+    shell: "nohup sh /opt/SP/apps/tomcat/bin/catalina.sh start
